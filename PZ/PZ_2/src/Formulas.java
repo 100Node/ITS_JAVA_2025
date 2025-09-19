@@ -1,3 +1,4 @@
+package src;
 import static java.lang.Math.*;
 
 public class Formulas {
