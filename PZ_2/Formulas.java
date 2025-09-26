@@ -1,4 +1,4 @@
-package src;
+package PZ_2;
 import static java.lang.Math.*;
 
 public class Formulas {
