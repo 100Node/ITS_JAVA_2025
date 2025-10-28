@@ -37,11 +37,11 @@ public class Task3 {
         double sum = 0.0;
 
         for (int i = 1; i <= k; i++) {
-            // First term: 1/√(z·i)
+            // First term: 1/sqrt(z·i)
             double term1 = 1.0 / Math.sqrt(z * i);
 
-            // Second term: tg(k/i) = tan(k/i)
-            double term2 = Math.tan((double) k / i);
+            // Second term: tg(k/i)
+            double term2 = Math.tan(k / i);
 
             double currentTerm = term1 + term2;
             sum += currentTerm;

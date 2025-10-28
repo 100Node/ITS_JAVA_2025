@@ -46,7 +46,7 @@ public class Task9 {
                 sum += term;
             }
         } else {
-            double term = (double) l / Math.sqrt(t);
+            double term = l / Math.sqrt(t);
             sum = t * term;
         }
 
