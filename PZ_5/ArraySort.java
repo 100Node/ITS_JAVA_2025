@@ -49,7 +49,7 @@ public class SortingAlgorithms {
         long[] arr = new long[size];
 
         for (int i = 0; i < size; i++) {
-            arr[i] = min + (long) (random.nextDouble() * (max - min));
+            arr[i] = min + (long) (random.nextDouble() * (max + 1 - min));
         }
 
         return arr;
@@ -64,24 +64,25 @@ public class SortingAlgorithms {
     public static void main(String[] args) {
         System.out.println("=== ТЕСТУВАННЯ АЛГОРИТМІВ СОРТУВАННЯ ===\n");
 
-        // Генерація тестового масиву
-        int size = 10;
-        long[] originalArray = generateRandomArray(size, 1, 100);
+        // // Генерація тестового масиву
+        // int size = 10;
+        // long[] originalArray = generateRandomArray(size, 1, 100);
 
-        System.out.println("Початковий масив:");
+        // System.out.println("Початковий масив:");
+        // printArray(originalArray);
+
+        // // Тестування Selection Sort
+        // long[] arr1 = Arrays.copyOf(originalArray, originalArray.length);
+        // System.out.println("\n--- Selection Sort (по спаданню) ---");
+        // selectionSort(arr1);
+        // printArray(arr1);
+
+        // // Тестування Insertion Sort
+        // long[] arr2 = Arrays.copyOf(originalArray, originalArray.length);
+        // System.out.println("\n--- Insertion Sort (по спаданню) ---");
+        // insertionSort(arr2);
+        // printArray(arr2);
+        long[] originalArray = generateRandomArray(20, 1, 6);
         printArray(originalArray);
-
-        // Тестування Selection Sort
-        long[] arr1 = Arrays.copyOf(originalArray, originalArray.length);
-        System.out.println("\n--- Selection Sort (по спаданню) ---");
-        selectionSort(arr1);
-        printArray(arr1);
-
-        // Тестування Insertion Sort
-        long[] arr2 = Arrays.copyOf(originalArray, originalArray.length);
-        System.out.println("\n--- Insertion Sort (по спаданню) ---");
-        insertionSort(arr2);
-        printArray(arr2);
-
     }
 }
